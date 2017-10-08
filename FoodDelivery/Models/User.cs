@@ -9,6 +9,16 @@ namespace FoodDelivery.Models
 {
     public class User
     {
+        public User(string name, DateTime birthDate, string phone, string email, string login, string password)
+        {
+            Name = name;
+            BirthDate = birthDate;
+            Phone = phone;
+            Email = email;
+            Login = login;
+            Password = password;
+        }
+
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid Guid { get; set; }

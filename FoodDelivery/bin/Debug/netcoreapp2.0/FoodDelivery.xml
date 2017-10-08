@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FoodDelivery</name>
+    </assembly>
+    <members>
+        <member name="M:FoodDelivery.Controllers.UsersController.Create(FoodDelivery.Models.User)">
+            <summary>
+            Create a new User!
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.UsersController.Update(FoodDelivery.Models.User)">
+            <summary>
+            Update a User!
+            </summary>
+        </member>
+        <member name="M:FoodDelivery.Controllers.UsersController.Delete(System.Guid)">
+            <summary>
+            Delete a user!
+            </summary>
+            <param name="userGuid"></param>
+        </member>
+        <member name="M:FoodDelivery.Controllers.UsersController.GetUsers">
+            <summary>
+            Get List Users
+            </summary>
+        </member>
+    </members>
+</doc>

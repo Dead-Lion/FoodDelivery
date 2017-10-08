@@ -9,3 +9,4 @@ D:\FoodDelivery\FoodDelivery\obj\Debug\netcoreapp2.0\FoodDelivery.csprojResolveA
 D:\FoodDelivery\FoodDelivery\bin\Debug\netcoreapp2.0\FoodDelivery.pdb
 D:\FoodDelivery\FoodDelivery\obj\Debug\netcoreapp2.0\FoodDelivery.dll
 D:\FoodDelivery\FoodDelivery\obj\Debug\netcoreapp2.0\FoodDelivery.pdb
+D:\FoodDelivery\FoodDelivery\bin\Debug\netcoreapp2.0\FoodDelivery.xml
