@@ -5,8 +5,8 @@ D:\FoodDelivery\FoodDelivery\bin\Debug\netcoreapp2.0\FoodDelivery.deps.json
 D:\FoodDelivery\FoodDelivery\bin\Debug\netcoreapp2.0\FoodDelivery.runtimeconfig.json
 D:\FoodDelivery\FoodDelivery\bin\Debug\netcoreapp2.0\FoodDelivery.runtimeconfig.dev.json
 D:\FoodDelivery\FoodDelivery\bin\Debug\netcoreapp2.0\FoodDelivery.dll
-D:\FoodDelivery\FoodDelivery\obj\Debug\netcoreapp2.0\FoodDelivery.csprojResolveAssemblyReference.cache
 D:\FoodDelivery\FoodDelivery\bin\Debug\netcoreapp2.0\FoodDelivery.pdb
 D:\FoodDelivery\FoodDelivery\obj\Debug\netcoreapp2.0\FoodDelivery.dll
 D:\FoodDelivery\FoodDelivery\obj\Debug\netcoreapp2.0\FoodDelivery.pdb
 D:\FoodDelivery\FoodDelivery\bin\Debug\netcoreapp2.0\FoodDelivery.xml
+D:\FoodDelivery\FoodDelivery\obj\Debug\netcoreapp2.0\FoodDelivery.csprojResolveAssemblyReference.cache

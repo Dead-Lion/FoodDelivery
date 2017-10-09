@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace FoodDelivery.Models
+namespace FoodDelivery.ViewModels
 {
-    public class User
+    public class UserView
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public Guid Guid { get; set; }
+        public UserView(string name, DateTime birthDate, string phone, string email, string login, string password)
+        {
+            Name = name;
+            BirthDate = birthDate;
+            Phone = phone;
+            Email = email;
+            Login = login;
+            Password = password;
+        }
 
         public string Name { get; set; }
         public DateTime BirthDate { get; set; }

@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using FoodDelivery.Models;
+using FoodDelivery.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -33,6 +34,9 @@ namespace FoodDelivery
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationContext>();
+
+            services.AddScoped<UserService>();
+
             // Add framework services.
             services.AddMvc();
 
@@ -42,7 +46,7 @@ namespace FoodDelivery
                 a.SwaggerDoc("v1", new Info
                 {
                     Version = "v1",
-                    Title = "ToDo API",
+                    Title = "Top API",
                     Description = "A simple example ASP.NET Core Web API",
                     TermsOfService = "None",
                     Contact = new Contact { Name = "Drus", Email = "andrewdoge@gmail.com" }

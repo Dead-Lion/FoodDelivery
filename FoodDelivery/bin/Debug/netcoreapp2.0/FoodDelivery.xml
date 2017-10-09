@@ -4,25 +4,31 @@
         <name>FoodDelivery</name>
     </assembly>
     <members>
-        <member name="M:FoodDelivery.Controllers.UsersController.Create(FoodDelivery.Models.User)">
+        <member name="M:FoodDelivery.Controllers.UsersController.Create(FoodDelivery.ViewModels.UserView)">
             <summary>
-            Create a new User!
+            Create a new User
             </summary>
         </member>
-        <member name="M:FoodDelivery.Controllers.UsersController.Update(FoodDelivery.Models.User)">
+        <member name="M:FoodDelivery.Controllers.UsersController.Update(FoodDelivery.ViewModels.UserView)">
             <summary>
-            Update a User!
+            Update User
             </summary>
         </member>
         <member name="M:FoodDelivery.Controllers.UsersController.Delete(System.Guid)">
             <summary>
-            Delete a user!
+            Delete User!
+            </summary>
+            <param name="userGuid"></param>
+        </member>
+        <member name="M:FoodDelivery.Controllers.UsersController.GetUser(System.Guid)">
+            <summary>
+            Get user
             </summary>
             <param name="userGuid"></param>
         </member>
         <member name="M:FoodDelivery.Controllers.UsersController.GetUsers">
             <summary>
-            Get List Users
+            Get a List of Users
             </summary>
         </member>
     </members>
