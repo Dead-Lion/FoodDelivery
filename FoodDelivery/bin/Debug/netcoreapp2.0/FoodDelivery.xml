@@ -9,22 +9,20 @@
             Create a new User
             </summary>
         </member>
-        <member name="M:FoodDelivery.Controllers.UsersController.Update(FoodDelivery.ViewModels.UserView)">
+        <member name="M:FoodDelivery.Controllers.UsersController.Update(System.Guid,FoodDelivery.ViewModels.UserView)">
             <summary>
             Update User
             </summary>
         </member>
         <member name="M:FoodDelivery.Controllers.UsersController.Delete(System.Guid)">
             <summary>
-            Delete User!
+            Delete User
             </summary>
-            <param name="userGuid"></param>
         </member>
         <member name="M:FoodDelivery.Controllers.UsersController.GetUser(System.Guid)">
             <summary>
             Get user
             </summary>
-            <param name="userGuid"></param>
         </member>
         <member name="M:FoodDelivery.Controllers.UsersController.GetUsers">
             <summary>

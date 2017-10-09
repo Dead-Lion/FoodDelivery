@@ -27,7 +27,7 @@ namespace FoodDelivery.Controllers
         /// Create a new User
         /// </summary>
         [HttpPost]
-        [Route("Create")]
+        [Route("")]
         public async Task Create([FromBody]UserView model)
         {
             Mapper.Initialize(cfg => cfg.CreateMap<UserView, User>());
@@ -41,21 +41,21 @@ namespace FoodDelivery.Controllers
         /// Update User
         /// </summary>
         [HttpPut]
-        [Route("Update")]
-        public async Task Update([FromBody]UserView model)
+        [Route("{userGuid}")]
+        public async Task Update(Guid userGuid, [FromBody]UserView model)
         {
             Mapper.Initialize(cfg => cfg.CreateMap<UserView, User>());
             User user = Mapper.Map<UserView, User>(model);
+            user.Guid = userGuid;
 
             await _userService.Update(user);
         }
 
         /// <summary>
-        /// Delete User!
+        /// Delete User
         /// </summary>
-        /// <param name="userGuid"></param>
         [HttpDelete]
-        [Route("Delete")]
+        [Route("{userGuid}")]
         public async Task Delete(Guid userGuid)
         {
             await _userService.Delete(userGuid);
@@ -64,9 +64,8 @@ namespace FoodDelivery.Controllers
         /// <summary>
         /// Get user
         /// </summary>
-        /// <param name="userGuid"></param>
         [HttpGet]
-        [Route("GetUser")]
+        [Route("{userGuid}")]
         public Task<User> GetUser(Guid userGuid)
         {
             return _userService.GetUser(userGuid);
@@ -76,7 +75,7 @@ namespace FoodDelivery.Controllers
         /// Get a List of Users
         /// </summary>
         [HttpGet]
-        [Route("GetUsers")]
+        [Route("")]
         public List<User> GetUsers()
         {
             return _userService.GetUsers();
